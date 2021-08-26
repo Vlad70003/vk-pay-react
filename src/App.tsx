@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Pay } from './components/index';
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-
+      < Pay />
     </div>
   );
 }
