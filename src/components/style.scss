@@ -1,20 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    text-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.1);
 }
-.blue-border{
-    border: none;
-    border-bottom: 2px solid #3592FF;
-}
-.red-border{
-    border: none;
-    border-bottom: 2px solid red;
-}
-.grey-bg{
-    background: #9F9F9F;
-}
-.blue-bg{
-    background: #6CB0FF;
+.title{
+    font-size: 22px;
+    padding-bottom: 35px;
 }
 .form{
     box-sizing: border-box;
@@ -22,10 +13,7 @@
     padding: 48px 110px 50px;
     display: flex;
     flex-direction: column;
-    .title{
-        font-size: 22px;
-        padding-bottom: 35px;
-    }
+    
     .label{
         padding-bottom: 10px;
         font-size: 12px;
@@ -46,6 +34,7 @@
     }
     .horizontal-positioning__wrapper{
         max-width: 75px;
+        position: relative;
     }
     .button{
         padding: 15px 0;
@@ -55,4 +44,56 @@
         color: white;
         cursor: pointer;
     }
+    .grey-bg{
+        background: #9F9F9F;
+    }
+    .blue-bg{
+        background: #6CB0FF;
+    }
+    .blue-border{
+        border: none;
+        border-bottom: 2px solid #3592FF;
+    }
+    .red-border{
+        border: none;
+        border-bottom: 2px solid red;
+    }
+    .error-message{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul{
+        list-style: none;
+        li{
+            min-width: 200px;
+            margin: 10px;
+            padding: 20px;
+            background: grey;
+            border-radius: 10px;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid red;
+        }
+    }
+    .transparent{
+        color: transparent;
+        text-shadow: none;
+    }
+    .span{
+        position: absolute;
+        top: 30px;
+        
+    }
 }
+.loading:after {
+    content: '.';
+    animation: loading 1s ease alternate infinite;
+}
+
+@keyframes loading {
+    60%  { text-shadow: 0.35em 0 0 currentColor; }
+    100% { text-shadow: 0.35em 0 0 currentColor, 0.75em 0 0 currentColor; }
+}
+

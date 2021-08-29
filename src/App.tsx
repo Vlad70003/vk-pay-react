@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConnectPay } from './components/index';
+import { ConnectPay } from './components/Pay';
 import './App.scss';
 import { connect } from 'react-redux';
 

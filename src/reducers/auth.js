@@ -1,8 +1,8 @@
-import {SAVE_CARD_SUCCESS} from '../actions.js';
+import {SAVE_CARD_SUCCESS, STATUS_UPDATE} from '../actions.js';
 
 const initialState = {
-    saveCard: false,
-
+    pid: null,
+    status: 'wait',
 }
 
 
@@ -12,7 +12,13 @@ export default function auth(state = initialState, action){
         case SAVE_CARD_SUCCESS: {
           return {
             ...state, 
-            saveCard: true,
+            pid: action.payload,
+          }
+        }
+        case STATUS_UPDATE: {
+          return {
+            ...state,
+            status:  action.payload,
           }
         }
 
