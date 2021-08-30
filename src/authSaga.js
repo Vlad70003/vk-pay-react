@@ -1,4 +1,14 @@
-import { cardSaga, saveCardSaga, updateSaga, updateFn } from './Saga/cardSaga';
+import {
+    cardSaga,
+    saveCardSaga,
+    updateSaga,
+    updateFn
+} from './Saga/cardSaga';
 
 
-export { cardSaga, saveCardSaga, updateSaga, updateFn };
+export {
+    cardSaga,
+    saveCardSaga,
+    updateSaga,
+    updateFn
+};

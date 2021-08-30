@@ -2,6 +2,7 @@
   font-family: 'Roboto';
   src: url(./fonts/Roboto-Regular.ttf);
 }
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -42,6 +43,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -5,17 +5,26 @@ export const UPDATE = 'UPDATE';
 
 export const saveCard = (pan, expire, cardholder, cvc) => ({
     type: SAVE_CARD,
-    payload: {pan, expire, cardholder, cvc}
+    payload: {
+        pan,
+        expire,
+        cardholder,
+        cvc
+    }
 })
 
 export const saveCardSucces = (pid) => ({
     type: SAVE_CARD_SUCCESS,
-    payload: {pid},
+    payload: {
+        pid
+    },
 })
 
 export const statusUpdate = (status) => ({
     type: STATUS_UPDATE,
-    payload:  {status}
+    payload: {
+        status
+    }
 })
 
 export const update = () => ({
